@@ -5,16 +5,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
-import { CreateUserScreen } from './screens/CreateUserScreen'
-import { UserDetailScreen } from './screens/UserDetailScreen'
-import { UsersList } from './screens/UsersList'
+import { CreateGenero } from './screens/CreateGenero'
+import { MoviesList } from './screens/MoviesList'
+import { Menu } from './screens/Menu'
+import { CreateMovie } from './screens/CreateMovie'
 
 function MyStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="List" component={UsersList}/>
-      <Stack.Screen name="Create" component={CreateUserScreen} />
-      <Stack.Screen name="Detail" component={UserDetailScreen} />
+      <Stack.Screen name='Menu' component={Menu} />
+      <Stack.Screen name="Crear Genero" component={CreateGenero} />
+      <Stack.Screen name='List' component={MoviesList} />
+      <Stack.Screen name='Crear Pelicula' component={CreateMovie}/>
     </Stack.Navigator>
   )
 }
@@ -23,7 +25,7 @@ function MyStack() {
 export default function App() {
   return (
     <NavigationContainer>
-      <MyStack/>
+      <MyStack />
     </NavigationContainer>
   );
 }
