@@ -57,7 +57,7 @@ export const CreateGenero = () => {
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        padding: 35
+        padding: 35 
 
     },
     inputGroup:{

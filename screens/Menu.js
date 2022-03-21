@@ -4,9 +4,7 @@ import { View, Text, Button, TextInput, ScrollView, StyleSheet } from 'react-nat
 export const Menu = (props) => {
     return (
         <ScrollView style={styles.container}>
-            <View style={styles.inputGroup}>
-                <Text>Menu principal</Text>
-            </View>
+            
             <View style={styles.inputGroup}>
                 <Button title='Crear Genero' onPress={()=>{
                     props.navigation.navigate("Crear Genero");
