@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 import { CreateGenero } from './screens/CreateGenero'
 import { MoviesList } from './screens/MoviesList'
 import { Menu } from './screens/Menu'
-import { CreateMovie } from './screens/CreateMovie'
+import { CrearPelicula } from './screens/CrearPelicula'
 
 function MyStack() {
   return (
@@ -16,7 +16,7 @@ function MyStack() {
       <Stack.Screen name='Menu' component={Menu} />
       <Stack.Screen name="Crear Genero" component={CreateGenero} />
       <Stack.Screen name='List' component={MoviesList} />
-      <Stack.Screen name='Crear Pelicula' component={CreateMovie}/>
+      <Stack.Screen name='Crear Pelicula' component={CrearPelicula}/>
     </Stack.Navigator>
   )
 }
