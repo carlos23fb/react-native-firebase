@@ -12,7 +12,7 @@ export const CreateGenero = () => {
         name: '',
         generos: []
     })
- 
+
     const handleChangeText = (name, value) =>{
         setState({[name]: value})
     }
